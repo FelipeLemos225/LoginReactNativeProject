@@ -9,9 +9,9 @@ const data: IconData[] = [
   { id: "1", title: "Icon 1" },
   { id: "2", title: "Icon 2" },
   { id: "3", title: "Icon 3" },
-  { id: "4", title: "Icon 4" },
-  { id: "5", title: "Icon 5" },
-  { id: "6", title: "Icon 6" },
+  { id: "4", title: "Icon 4" }, // array of objects for the retangular Icons
+  { id: "5", title: "Icon 5" }, // Adding some text in the Icons just to have better loock (I know there's not 
+  { id: "6", title: "Icon 6" },// such a thing on the Figma prototype). It's just a sugestion modification. 
   { id: "7", title: "Icon 7" },
   { id: "8", title: "Icon 8" },
   { id: "9", title: "Icon 9" },
