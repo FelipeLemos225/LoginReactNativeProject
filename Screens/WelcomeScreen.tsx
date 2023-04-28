@@ -10,7 +10,7 @@ import { Roottypes } from "../types";
 type SignUpScreenNavigationProp = StackNavigationProp<Roottypes, "SignUp">;
 
 interface Props {
-  navigation: SignUpScreenNavigationProp;
+  navigation: SignUpScreenNavigationProp; //Handling navigation without use navigation
 }
 
 const WelcomeScreen = ({ navigation }: Props): JSX.Element => {
@@ -26,7 +26,7 @@ const WelcomeScreen = ({ navigation }: Props): JSX.Element => {
       setErrorMessageEmail("");
     }
     if (password === "") {
-      setErrorMessagePassword("Please enter a valid password");
+      setErrorMessagePassword("Please enter a valid password"); //Logic for the warnin messages
     } else {
       setErrorMessagePassword("");
     }

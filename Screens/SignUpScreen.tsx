@@ -18,7 +18,7 @@ import { Roottypes } from "../types";
 type SignUpScreenNavigationProp = StackNavigationProp<Roottypes, "Welcome">;
 
 interface Props {
-  navigation: SignUpScreenNavigationProp;
+  navigation: SignUpScreenNavigationProp; //Handling navigation without use navigation
 }
 
 const SignUpScreen = ({ navigation }: Props): JSX.Element => {
@@ -34,6 +34,7 @@ const SignUpScreen = ({ navigation }: Props): JSX.Element => {
   const handleCheckBoxPress = (): void => {
     setChecked(!checked);
     if (checked === true) {
+      //Handling the Checkbox
       setErrorMessageCheck("");
     }
   };
@@ -44,7 +45,7 @@ const SignUpScreen = ({ navigation }: Props): JSX.Element => {
       setErrorMessageEmail("");
     }
     if (username === "") {
-      setErrorMessageUsername("Please enter a valid username");
+      setErrorMessageUsername("Please enter a valid username"); //Logic for the warning messages
     } else {
       setErrorMessageUsername("");
     }
